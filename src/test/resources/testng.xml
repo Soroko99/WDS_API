@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HTTP API" parallel="classes" thread-count="3">
+
+    <listeners>
+        <listener class-name="utils.framework.SuiteListener"/>
+    </listeners>
+    <test name="Tests for Issue CRUD">
+        <classes>
+            <class name="navigation.Navigation"/>
+            <class name="admin_countries.AdminCountries"/>
+            <class name="admin_cities.AdminCities"/>
+            <class name="admin_buildings.AdminBuildings"/>
+            <class name="admin_floors.AdminFloors"/>
+            <class name="admin_rooms.AdminRooms"/>
+            <class name="admin_workplaces.AdminWorkplaces"/>
+        </classes>
+    </test>
+</suite>
